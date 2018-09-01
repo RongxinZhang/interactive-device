@@ -114,6 +114,20 @@ AnalogueWrite sends an analog voltage using PWN pulse-width modulation to specif
 
 I took apart an ergonomic mouse.
 
+![dim](assets/partf_mouse_whole.JPG)
+Mouse disassembled
+
+![dim](assets/partf_board1.png)
+Main board, front and back
+
+![dim](assets/partf_board2.png)
+Secondary boards, front and back
+
+![dim](assets/partf_schematic_copy.png)
+Secondary boards, front and back
+
+I was not able to make all the connections, especailly for the resistors as it appears the circuit is multi-layers or some of the connections are not visible. As a result, I simply showed the connections that I can physically see with my eyes and all the components.
+
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
 
 There is a small micro-controller in the mouse. It's main goal should be to convert analogue signals into digital and send it through bluetooth signals. The key analogue signals come from 3 sources:
@@ -124,7 +138,7 @@ There is a small micro-controller in the mouse. It's main goal should be to conv
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
 
 Information is transferred in the following parts:
-1. button clicks is a simple one and off switch. Information are
+1. button clicks is a simple one and off switch. Information are transferred to a central Chip-on-board processor that then is able transcodes the information into digital data.
 
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
 
