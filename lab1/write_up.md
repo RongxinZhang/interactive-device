@@ -150,7 +150,7 @@ The device does not appear to store state. Furthermore, it is a uni directional 
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
-**Describe what you did here.**
+The section closest to the battery is a great place for an LED. It has already been tested and we know that this works because there is another LED near by. ![dim](assets/partf_schematic_LED.png)
 
 ### 3. Build your light!
 
