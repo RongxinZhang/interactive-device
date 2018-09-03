@@ -81,7 +81,10 @@ void loop() {
 
 **Make a video of your LED blinking, and add it to your lab submission.**
 
-[Blink Video](https://youtu.be/2HoYjsD-I6s)
+NOTE: Click on image for video
+
+[![](http://img.youtube.com/vi/2HoYjsD-I6s/0.jpg)](https://youtu.be/2HoYjsD-I6s)
+
 
 Original video file located in: `lab1/assets/partc_blink.MOV`
 
@@ -163,11 +166,13 @@ The device does not appear to store state. Furthermore, it is a uni directional 
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
-The section closest to the power switch is a great place for an LED. Currently, there is no LED there and it is directly connected to ground. ![dim](assets/partf_schematic_LED_new.png)
+The section closest to the power switch is a great place for an LED. Currently, there is no LED there and it is directly connected to ground. ![dim](assets/partf_schematic_LED_new.png)Â
 
 ### 3. Build your light!
 
-[Frankenlight Video](https://youtu.be/T2mMk329U0o)
+NOTE: Click on image for video
+
+[![](http://img.youtube.com/vi/T2mMk329U0o/0.jpg)](https://youtu.be/T2mMk329U0o)
 
 Original video file located in: `lab1/assets/partf_light.MOV`
 
