@@ -14,7 +14,7 @@ Red(2), Red(2), Black(0), Black(x1Ohm), Brown(+- 1%)
 
 **b. What do you have to do to light your LED?**
 
-I need to click the button, I wired on to the board.
+I needed to push down the the button that connects the board and the LED.
 
 [reference](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_led_resistor_diagram.png)
 
@@ -24,7 +24,7 @@ I need to click the button, I wired on to the board.
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
 
-Simply change the output pin such that it is using a port instead of the default `LED_BUILTIN`.
+Simply change the output pin to a port instead of the default `LED_BUILTIN`.
 
 ```
 pinMode(3, OUTPUT);
@@ -32,15 +32,15 @@ pinMode(3, OUTPUT);
 
 **b. What line(s) of code do you need to change to change the rate of blinking?**
 
-I will change `delay(1000);` which lowers or increases the time in between the voltage changes.
+Change the delay function `delay();` which lowers or increases the time in between the voltage updates.
 
 **c. What circuit element would you want to add to protect the board and external LED?**
 
-You can add resistors to protect the LED or board which limits the amount of current that go through a particular point.
+You can add resistors to protect the LED or board as it limits the amount of current that can go through a particular point.
 
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
 
-When the delay is `15 milliseconds`, it is difficult to figure out whether the light is still blinking. However, I know for sure the lighti blinking based on my code, which specifies that the light is blinking.
+When the delay is `15 milliseconds`, it is difficult to figure out whether the light is still blinking. However, I know for sure the light is blinking based on my code, which specifies adjustments to the voltage.
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
@@ -95,7 +95,7 @@ Original video file located in: `lab1/assets/partc_blink.MOV`
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
 
-Yes, the potentiometer is a 3 pin resistor. There is a resistive material inside such that when I turn the knob, it increases the distance between the connective strip and the wire. Therefore, the further away the knob (second pin) is from the power input, the lesser voltage goes across. By connecting the first pin to power and the second pin to the input of the LED. I am able to adjust the voltage that moves across the led.
+Yes, I was able to get the potentiometer to work. The potentiometer is essence a 3 pin resistor. There is a resistive material inside such that when I turn the knob, it increases the distance between the connective strip and the wire. The further away the knob (second pin) is from the power input, the lesser voltage can go across. By connecting the first pin to power and the second pin to the input of the LED. I am able to adjust the voltage that moves across the LED.
 
 ![bright](assets/partd_bright.JPG)
 Bright
@@ -120,7 +120,7 @@ analogWrite(32, output);
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
 
-AnalogueWrite sends an analog voltage using PWN (pulse-width modulation) to specific pins. We can then set the a specific value between 0 and 255 of the voltage. As a result, it gives you more fine grained control over how . However, DigitalWrite only provides 2 values, HIGH and LOW where `HIGH=5V` and `LOW=0V`.
+AnalogueWrite sends an analog voltage using PWN (pulse-width modulation) to specific pins with a value between 0 and 255. As a result, it gives one fine grained control over how much voltage can go across. DigitalWrite on the other hand only provides 2 values, HIGH and LOW where `HIGH=5V` and `LOW=0V`.
 
 [reference](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
 
@@ -144,11 +144,12 @@ Secondary boards, front and back
 ![dim](assets/partf_schematic_copy.png)
 Secondary boards, front and back
 
-I was not able to make all the connections, especailly for the resistors as it appears the circuit is multi-layers or some of the connections are not visible. As a result, I simply showed the connections that I can physically see with my eyes and all the components.
+I was not able to make all the connections, especially for the resistors as the circuit appears to be multi-layers where some connections are not visible. As a result, I simply showed the connections and all the components that I can physically see .
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
 
 There is a small micro-controller in the mouse. It's main goal should be to convert analogue signals into digital and send it through bluetooth signals. The key analogue signals come from 3 sources:
+
 1. button clicks from left and right mouse.
 2. scrollers in the middle of the mouse
 3. location tracking received from the laser tracker at the bottom of the mouse.
@@ -156,6 +157,7 @@ There is a small micro-controller in the mouse. It's main goal should be to conv
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
 
 Information is transferred in the following parts:
+
 1. button clicks is a simple one and off switch. Information are transferred to a central Chip-on-board processor that then is able transcodes the information into digital data.
 
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
@@ -164,7 +166,7 @@ The device is powered by two 1.5V batteries.
 
 **d. Is information stored in your device? Where? How?**
 
-The device does not appear to store state. Furthermore, it is a uni directional interaction. The device only sends information to the computer.
+The device does not appear to store state. Furthermore, it is a uni-directional interaction. The device only sends information to the computer.
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
