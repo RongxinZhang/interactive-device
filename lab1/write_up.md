@@ -36,9 +36,11 @@ I will change `delay(1000);` which lowers or increases the time in between the v
 
 **c. What circuit element would you want to add to protect the board and external LED?**
 
+You can add resistors to protect the LED or board which limits the amount of current that go through a particular point.
+
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
 
-when the delay is `15 milliseconds`, it is difficult to figure out whether the light is still blinking. However, I know for sure that from the code that the light is blinking.
+When the delay is `15 milliseconds`, it is difficult to figure out whether the light is still blinking. However, I know for sure the lighti blinking based on my code, which specifies that the light is blinking.
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
