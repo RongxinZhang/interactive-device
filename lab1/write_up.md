@@ -81,7 +81,9 @@ void loop() {
 
 **Make a video of your LED blinking, and add it to your lab submission.**
 
-[Video Link](./assets/partc_blink.MOV)
+[Blink Video](https://youtu.be/2HoYjsD-I6s)
+
+Original video file located in: `lab1/assets/partc_blink.MOV`
 
 
 ## Part D. Manually fade an LED
@@ -165,5 +167,7 @@ The section closest to the power switch is a great place for an LED. Currently, 
 
 ### 3. Build your light!
 
-[Frankenlight Video](assets/partf_light.MOV)
+[Frankenlight Video](https://youtu.be/T2mMk329U0o)
+
+Original video file located in: `lab1/assets/partf_light.MOV`
 
