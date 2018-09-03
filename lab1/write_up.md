@@ -1,5 +1,6 @@
 # IDD-Fa18-Lab1: Blink!
-**A lab report by Rongxin Zhang**
+
+A lab report by **Rongxin Zhang (rz345)**
 
 ## Part A. Set Up a Breadboard
 
@@ -13,8 +14,9 @@ Red(2), Red(2), Black(0), Black(x1Ohm), Brown(+- 1%)
 
 **b. What do you have to do to light your LED?**
 
-I need to click the button that I wired on to the board similar to: https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_led_resistor_diagram.png
-Fully wired board with click button
+I need to click the button, I wired on to the board.
+
+[reference](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_led_resistor_diagram.png)
 
 ## Part C. Blink a LED using Arduino
 
@@ -40,13 +42,22 @@ when the delay is `15 milliseconds`, it is difficult to figure out whether the l
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
-My custom blink function uses a random number generator to create the wait time between the HIGH and LOW voltage options.
+My custom blink function uses a random number generator to create the wait time between the HIGH and LOW voltages.
 
 [Custom Blink Code](./code.ino)
 
 ```java
+
+/*
+  Random Blink
+*/
+const int PIN= 3;
+
+const int MIN_WAIT= 15;
+const int MAX_WAIT= 1000;
+
 void setup() {
-  pinMode(3, OUTPUT);
+  pinMode(PIN, OUTPUT);
 
   // Create a random seed based on some value
   randomSeed(analogRead(0));
@@ -55,12 +66,12 @@ void setup() {
 void loop() {
 
   // Create a random wait value
-  waitTime= random(100, 2000)
+  waitTime= random(MIN_WAIT, MAX_WAIT)
 
-  digitalWrite(3, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(waitTime);                       // wait for a second
-  digitalWrite(3, LOW);    // turn the LED off by making the voltage LOW
-  delay(waitTime);                       // wait for a second
+  digitalWrite(PIN, HIGH);
+  delay(waitTime);
+  digitalWrite(PIN, LOW);
+  delay(waitTime);
 }
 ```
 
@@ -102,7 +113,7 @@ analogWrite(32, output);
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
 
-AnalogueWrite sends an analog voltage using PWN pulse-width modulation to specific pins. We can then set the a specific value between 0 and 255. However, DigitalWrite only provides 2 values, HIGH and LOW which. Furthermore, digital write is based purely on the amount voltage control, where HIGH=5V and LOW=0V.
+AnalogueWrite sends an analog voltage using PWN (pulse-width modulation) to specific pins. We can then set the a specific value between 0 and 255 of the voltage. As a result, it gives you more fine grained control over how . However, DigitalWrite only provides 2 values, HIGH and LOW where `HIGH=5V` and `LOW=0V`.
 
 [reference](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
 
@@ -150,10 +161,9 @@ The device does not appear to store state. Furthermore, it is a uni directional 
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
-The section closest to the battery is a great place for an LED. It has already been tested and we know that this works because there is another LED near by. ![dim](assets/partf_schematic_LED.png)
+The section closest to the power switch is a great place for an LED. Currently, there is no LED there and it is directly connected to ground. ![dim](assets/partf_schematic_LED_new.png)
 
 ### 3. Build your light!
 
-**Make a video showing off your Frankenlight.**
+[Frankenlight Video](assets/partf_light.MOV)
 
-**Include any schematics or photos in your lab write-up.**
