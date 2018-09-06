@@ -59,7 +59,7 @@ void setup() {
 void loop() {
   // Turn off the display:
   sensorValue = analogRead(sensorPin);
-  
+
   lcd.setCursor(0,0);
   // Turn on the display:
 
