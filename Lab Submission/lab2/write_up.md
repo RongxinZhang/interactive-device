@@ -3,49 +3,38 @@
 Rongxin Zhang (rz345)
 
 ## Part A. Solder your LCD panel
-You'll need to attach the header pins that came with your LCD character panel to your actual panel. Easiest is to insert the short end of the header pins into the back of the LCD panel, so that the long pins stick out the back and you can insert your LCD panel into a breadboard for easy use.
-
-If you have never soldered before, we're happy to show you how! PLEASE ASK!!
 
 ## Part B. Writing to the LCD
 
-Let's use your LCD screen to display some interesting information! There is a good deal of example code for playing with your LCD in the Arduino Examples:
-
-File->Examples->LiquidCrystal
-
-Let's start with the "Display" program, which just flashes "Hello World!" These LCDs are a custom part, but there's a lot of information at this page, the pinout and dimensions page and the LCD controller page.
-
 ##### a. What voltage level do you need to power your display?
+
+It uses 5V from the power supply
 
 ##### b. What voltage level do you need to power the display backlight?
 
-
-Wire up your LCD according to the schematic below. If you didn't have our diagram, you would use the data sheets for the LCD and follow the comments in the "Display" code to figure out how to wire it up.
-
-
-Be very careful not to connect Pin 1 to Pin 2 on the LCD, as this can destroy your Arduino. Check the connections for a short between power and ground before you plug in power or the USB cable.
-
-See Tutorial for more information. See LCD Library for the various functions you can use.
-
-Try compiling and running the code. If it doesn't work the first time, check your pinouts...
-
-The 10K pot connected to Vo on the LCD adjusts the contrast, so try adjusting that if your LCD won't turn on. The contrast might be so low that you're not able to see it, so make sure you've checked both extremes.
-
-LCD pin 15 and 16 (LED+, LED-) are designed for background lighting. If you feel the whole screen too dark, you may try to connect pin15(LED+) to +3V or +3.3V and pin16(LED-) to ground. Don't connect pin15(LED+) to +5V as it may burn background light!
-
-Do try to set this up before peeking at this diagram.
+We tested it with 3.3V which is what we tested with
 
 ##### c. What was one mistake you made when wiring up the display? How did you fix it?
 
+The issue was the separations of the different sections in the large bread-board. Power did not corss between the boards. As a result, my LCD screen was not getting any power. Simply connected the breaks in the breadboard.
+
 ##### d. What line of code do you need to change to make it flash your name instead of "Hello World"?
+Changed this line of code,
 
-Try a few of the other examples in the folder to get a feel for the capabilities of your LCD. There is a list of all the possible functions at the Arduino LiquidCrystal Library.
-
-Incorporate the LCD into your fading LED/potentiometer code so that you can read out the exact analog value that you are reading in on Analog Pin 0. It's your own lowly multimeter!
+```java
+lcd.print("Rongxin Zhang");
+```
 
 ##### e. Include a copy of your Lowly Multimeter code in your lab write-up.
 
-Leave your LCD set up for the rest of Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
+```java
+// Turn off the display:
+int sensorValue = analogRead(A0);
+// Turn on the display:
+
+lcd.print(sensorValue);
+delay(100);
+```
 
 ## Part C. Using a time-based digital sensor
 Rotary Encoder We have a high-quality 24 pulse encoder with knob and nice, click-y rotation detents.
