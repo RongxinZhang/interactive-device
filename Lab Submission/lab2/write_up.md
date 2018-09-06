@@ -49,7 +49,7 @@ void loop() {
 }
 ```
 
-[Full Code](./assets/potentiometer.ino)
+[Full Code](./potentiometer.ino)
 
 ## Part C. Using a time-based digital sensor
 
@@ -78,7 +78,7 @@ void loop() {
 ##### b. What song is playing?
 It's playing the Star Wars song.
 
-[Song](./assets/playTune.ino)
+[Song](./playTune.ino)
 
 ## Part E. Make your own timer
 
