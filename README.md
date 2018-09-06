@@ -3,9 +3,9 @@
 Rongxin Zhang (r345)
 
 ### Lab 1
-#### [Prep 1 write up](/Lab Prep Submission/lab1)
-#### [Lab 1 write up](/Lab Submission/lab1/write_up.md)
+#### [Prep 1 write up](/Lab_Prep_Submission/lab1)
+#### [Lab 1 write up](/Lab_Submission/lab1/write_up.md)
 
 ### Lab 2
-#### [Prep](/Lab Prep Submission/lab2/README.md)
-#### [Write](/Lab Submission/lab2/write_up.md)
+#### [Prep](/Lab_Prep_Submission/lab2/README.md)
+#### [Write](/Lab_Submission/lab2/write_up.md)
