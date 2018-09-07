@@ -2,7 +2,7 @@
 
 Rongxin Zhang (r345)
 
-### Lab 1: LED
+### Lab 1: Blink!
 #### [Prep 1](/Lab_Prep_Submission/prep1/README.md)
 #### [Lab 1](/Lab_Submission/lab1/write_up.md)
 
