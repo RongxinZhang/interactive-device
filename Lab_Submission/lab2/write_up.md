@@ -70,9 +70,9 @@ void loop() {
 
 ## Part C. Using a time-based digital sensor
 
-**Upload a video of your working rotary encoder here.**
+[![](http://img.youtube.com/vi/Vezrui-5UPA/0.jpg)](https://youtu.be/Vezrui-5UPA)
 
-[Singing Video](./assets/part_d.MOV)
+[Original Video](./assets/part_c-rotary.MOV)
 
 ## Part D. Make your Arduino sing!
 
@@ -82,10 +82,18 @@ You can change the `noteDurations[]`, such that they are shorter
 
 Star Wars song.
 
-[Full Code](./playTune.ino)
+[![](http://img.youtube.com/vi/cMWWSiyNajc/0.jpg)](https://youtu.be/cMWWSiyNajc)
+
+[Full Code](./playTune/playTune.ino)
+
+[Original Video](./assets/part_d-sing.MOV)
+
 
 ## Part E. Make your own timer
 
 **a. Make a short video showing how your timer works, and what happens when time is up!**
 
-**b. Post a link to the completed lab report your class hub GitHub repo.**1
+[![](http://img.youtube.com/vi/RKcL4TtGens/0.jpg)](https://youtu.be/RKcL4TtGens)
+
+[Full Code](./timer/timer.ino)
+[Original Video](./assets/part_e-timer.MOV)
