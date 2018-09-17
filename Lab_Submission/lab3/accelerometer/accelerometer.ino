@@ -39,6 +39,18 @@ void setup(void) {
   Serial.println("LIS3DH found!");
   
   lis.setRange(LIS3DH_RANGE_4_G);   // 2, 4, 8 or 16 G!
+
+  //  
+  //  Proximity Sensor
+  //  
+  Serial.begin(9600);
+  Serial.println("VCNL4010 test");
+
+  if (! vcnl.begin()){
+    Serial.println("Sensor not found :(");
+    while (1);
+  }
+  Serial.println("Found VCNL4010");
   
   Serial.print("Range = "); Serial.print(2 << lis.getRange());  
   Serial.println("G");
@@ -60,6 +72,12 @@ void loop() {
   Serial.print(" \tY: "); Serial.print(event.acceleration.y); 
   Serial.print(" \tZ: "); Serial.print(event.acceleration.z); 
   Serial.println(" m/s^2 ");
+
+  //  
+  //  Proximity Sensor
+  //  
+  Serial.print("Ambient: "); Serial.println(vcnl.readAmbient());
+  Serial.print("Proximity: "); Serial.println(vcnl.readProximity());
 
   Serial.println();
  
