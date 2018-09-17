@@ -54,9 +54,15 @@ Accelerometer outputs
 ![accelerometer](./assets/part2.JPG)
 Accelerometer attached
 
+[![](http://img.youtube.com/vi/5a6-GCd6Awg/0.jpg)](https://youtu.be/5a6-GCd6Awg)
+Accelerometer Video
+
 ### 3. IR Proximity Sensor
 
 **a. Describe the voltage change over the sensing range of the sensor. A sketch of voltage vs. distance would work also. Does it match up with what you expect from the datasheet?**
+
+[![](http://img.youtube.com/vi/rEHnUGYaqts/0.jpg)](https://youtu.be/rEHnUGYaqts)
+Proximity Sensor Video
 
 **b. Upload your merged code to your lab report repository and link to it here.**
 
