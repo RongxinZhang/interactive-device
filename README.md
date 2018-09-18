@@ -15,3 +15,5 @@ Pre Lab 1 [Github](/Lab_Prep_Submission/prep1/README.md)
 Pre Lab 2 [Digital Timer](/Lab_Prep_Submission/prep2/README.md)
 
 Pre Lab 3 [Data Logger](/Lab_Prep_Submission/prep3/README.md)
+
+Pre Lab 4 [Paper ideas](/Lab_Prep_Submission/prep4/README.md)
