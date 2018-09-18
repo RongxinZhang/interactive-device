@@ -14,6 +14,6 @@
 5. A bouncing frog that vibrates more or less based on the the pressure from the the press sensor.
 6. A hand that waves based on proximity sensor. The closer you are the slower it waves, the further you are the faster it waves.
 7. A close that changes time to a random input once every minute.
-8. A head that swings back and fourth following the movements of the acceleromenter.
-9. A paper deflating mickeymouse that goes up and down based on button presses
-10. A light box that lights up in different colors based on the combination of inputs e.g proximity sensor, preasure sensor.
+8. A head that swings back and fourth following the movements of the accelerometer.
+9. A paper deflating mickey mouse that goes up and down based on button presses
+10. A light box that lights up in different colors based on the combination of inputs e.g proximity sensor, pressure sensor.
