@@ -96,6 +96,21 @@ I attached a rotary encoder to the servo such that the rotation of the rotar cha
 
 **a. Make a video of your proto puppet.**
 
+![making](./assets/making_0.PNG)
+Making process
+
+![making](./assets/making_3.jpg)
+Finished V1
+
+[![](http://img.youtube.com/vi/9wgoyRepe98/0.jpg)](https://youtu.be/9wgoyRepe98)
+Video
+
 ## Part E. Make it your own
 
-**a. Make a video of your final design.**
+This is a skit of an actual event that occurred in the Maker Lab. TRUE STORY!
+
+[![](http://img.youtube.com/vi/6YccfBYW6oo/0.jpg)](https://youtu.be/6YccfBYW6oo)
+
+I also used the auto-encoder to change the position of the arm or the Ninja
+
+[![](http://img.youtube.com/vi/X7Gv1RM_FQU/0.jpg)](https://youtu.be/X7Gv1RM_FQU)

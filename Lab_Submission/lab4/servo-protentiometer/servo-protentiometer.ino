@@ -14,11 +14,13 @@ Servo myservo;  // create servo object to control a servo
 
 int pos = 0;    // variable to store the servo position
 
-#define ENC_A 2 //these need to be digital input pins
-#define ENC_B 3
+#define ENC_A 10 //these need to be digital input pins
+#define ENC_B 11
+
+#define SERVO 12
 
 void setup() {
-  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+  myservo.attach(SERVO);  // attaches the servo on pin 9 to the servo object
     /* Setup encoder pins as inputs */
   pinMode(ENC_A, INPUT_PULLUP);
   pinMode(ENC_B, INPUT_PULLUP);
