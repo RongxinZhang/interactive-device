@@ -20,4 +20,4 @@ Pre Lab 3 [Data Logger](/Lab_Prep_Submission/prep3/README.md)
 
 Pre Lab 4 [Paper Ideas](/Lab_Prep_Submission/prep4/README.md)
 
-Pre Lab 5 [UseLess boc](/Lab_Prep_Submission/prep5/README.md)
+Pre Lab 5 [UseLess box](/Lab_Prep_Submission/prep5/README.md)
