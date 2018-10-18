@@ -10,7 +10,7 @@
 
 Connected Door bell
 
-![](http://img.youtube.com/vi/phOI0Xnc0O8/0.jpg)](https://youtu.be/phOI0Xnc0O8) 
+[![](http://img.youtube.com/vi/phOI0Xnc0O8/0.jpg)](https://youtu.be/phOI0Xnc0O8) 
 
 ## Part B. Web Camera
 
@@ -20,11 +20,11 @@ Connected Door bell
 
 Connected arduino to P.I
 
-![](http://img.youtube.com/vi/LPhRzmFsg3s/0.jpg)](https://youtu.be/LPhRzmFsg3s) 
+[![](http://img.youtube.com/vi/LPhRzmFsg3s/0.jpg)](https://youtu.be/LPhRzmFsg3s) 
 
 Door Bell controlled by button worked
 
-![](http://img.youtube.com/vi/FhTqDCBubmk/0.jpg)](https://youtu.be/FhTqDCBubmk) 
+[![](http://img.youtube.com/vi/FhTqDCBubmk/0.jpg)](https://youtu.be/FhTqDCBubmk) 
 
 
 ## Part C. Make it your own
