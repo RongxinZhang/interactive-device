@@ -16,6 +16,18 @@ Connected Door bell
 
 **a. Compare `helloYou/server.js` and `IDD-Fa18-Lab7/pictureServer.js`. What elements had to be added or changed to enable the web camera? (Hint: It might be good to know that there is a UNIX command called `diff` that compares files.)**
 
+Attached below are the two main differences between the two code bases:
+
+1. Taking picture code base
+
+![](https://user-images.githubusercontent.com/3782456/47173497-380fd580-d2dc-11e8-908e-9633b4be6f4c.png)
+
+
+2. Additional Data event handler for the socket.io
+
+![](https://user-images.githubusercontent.com/3782456/47173502-39d99900-d2dc-11e8-98ee-5ed6951a8a34.png)
+
+
 **b. Include a video of your working video doorbell**
 
 Connected arduino to P.I
@@ -32,6 +44,8 @@ Door Bell controlled by button worked
 **a. Find, install, and try out a node-based library and try to incorporate into your lab. Document your successes and failures (totally okay!) for your writeup. This will help others in class figure out cool new tools and capabilities.**
 
 I installed 2 new packages, `nodeMailer` and `ip`.
+
+[images](https://user-images.githubusercontent.com/3782456/47173497-380fd580-d2dc-11e8-908e-9633b4be6f4c.png)
 
 The below functions sends and email to an email account with the link to the the image and the src of the images.
 
