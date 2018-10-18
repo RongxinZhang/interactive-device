@@ -1,46 +1,38 @@
-#include <Servo.h> 
+int led = 13; // led that we will toggle
+char inChar;  // character we will use for messages from the RPi
 
-#define servoPin  9
-#define switchPin 2
+int button = 2;
+int buttonState;
 
-#define closePos  00
-#define openPos   180
-
-Servo servo;
-int switchState;
-int previousSwitchState;
-
-void ToggleSwitch(int switchState)
-{    
-  if (switchState == HIGH)
-  {
-    servo.write(openPos);
-  }
-  else
-  {
-    servo.write(closePos);
-  }
-  previousSwitchState = switchState;  // remember that the switch state has changed 
+void setup() {
+  Serial.begin(9600);
+  pinMode(led, OUTPUT);
+  pinMode(button, INPUT);
 }
 
-void setup()
-{
- 
-  switchState = LOW;
-  previousSwitchState = LOW;
+void loop() {
+  // read the character we recieve on the serial port from the RPi
+  if(Serial.available()) {
+    inChar = (char)Serial.read();
+  }
 
-  servo.attach(servoPin);
-  servo.write(closePos);
+  // if we get a 'H', turn the LED on, else turn it off
+  if(inChar == 'H'){
+    digitalWrite(led, HIGH);
+  }
+  else{
+    digitalWrite(led, LOW);
+  }
 
-  // we should probably pay attention to the switch
-  pinMode(switchPin, INPUT); 
-}
-
-void loop()
-{ 
-  int switchState = digitalRead(switchPin);
-  if (switchState != previousSwitchState)
-    ToggleSwitch(switchState);
-
-  delay(20);
+  // Button event checker - if pressed, send message to RPi
+  int newState = digitalRead(button);
+  if (buttonState != newState) {
+    buttonState = newState;
+    if(buttonState == HIGH){
+      Serial.println("light"); //note println put a /r/n at the end of a line
+    }
+    else{
+      Serial.println("dark");
+    }
+  }
 }

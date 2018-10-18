@@ -15,6 +15,8 @@ Lab 5 [Useless Box](/Lab_Submission/lab5/write_up.md)
 
 Lab 6 [Chat Bot](/Lab_Submission/lab6/write_up.md)
 
+Lab 6 [Door Bell](/Lab_Submission/lab7/write_up.md)
+
 ### Lab Prep Submissions
 Pre Lab 1 [Github](/Lab_Prep_Submission/prep1/README.md)
 

@@ -4,6 +4,8 @@
 
 ## In this Report
 
+PI Password: pi123345
+
 ## Updated ChatBot Code
 
 [Full Code](https://github.com/RongxinZhang/IDD-Fa18-Lab6/blob/master/chatServer.js)
