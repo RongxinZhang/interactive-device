@@ -31,4 +31,44 @@ Door Bell controlled by button worked
 
 **a. Find, install, and try out a node-based library and try to incorporate into your lab. Document your successes and failures (totally okay!) for your writeup. This will help others in class figure out cool new tools and capabilities.**
 
+I installed 2 new packages, `nodeMailer` and `ip`.
+
+The below functions sends and email to an email account with the link to the the image and the src of the images.
+
+Below is the code that I edited.
+
+```js
+function emailSender(account, imageURL){
+  let transporter = nodemailer.createTransport({
+    host: 'smtp.ethereal.email',
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: { user: account.user, pass: account.pass }
+  });
+
+  // setup email data with unicode symbols
+  let mailOptions = {
+      from: '"Thomas M Trad" <thomastrad@gmail.com>', // sender address
+      to: 'you@mail.com', // list of receivers
+      subject: 'House alert', // Subject line
+      html: '<b>Someone is at the door!</b> <br/> <img src="'+imageURL+'"/>' // html body
+  };
+
+  // send mail with defined transport object
+  transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+          return console.log(error);
+      }
+      console.log('Message sent: %s', info.messageId);
+      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+  });
+}
+```
+
+The [Full Code](./takePicture.js) is available. I added the comments `RONGXIN:....` to the places that I made edits
+
 **b. Upload a video of your working modified project**
+
+Door Bell that sends an email to the user with the image of the person at the door.
+
+[![](http://img.youtube.com/vi/PJScmfzYadU/0.jpg)](https://youtu.be/PJScmfzYadU) 
